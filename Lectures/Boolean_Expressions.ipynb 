@@ -1,0 +1,227 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Boolean Expressions\n",
+    "<span style='color:#5A5A5A'> February <mark style=\"background-color: #FFFF00\">14</mark>, 2021 </span>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Last time we got started with Python. We learned about simple and formatted printouts, how to read simple user inputs, the basic data types, arithmetic expressions, and variables. You have used these in your first programming exercises.\n",
+    "\n",
+    "Today we will talk about boolean expressions and conditional branching. Boolean expressions allow us to express conditions and to check at runtime if they are true or false. With the if statement we can deviate from the normal sequential control-flow depending on whether a certain condition is true or not. This allows us to let our program behave differently in different situations. Furthermore we will take a short detour and take a look at binary numbers.\n",
+    "\n",
+    "Next time we will deal with the implementation of repetitive behavior (loops)."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<h3 style='color:#3981CB'> Boolean Values </h3> \n",
+    "\n",
+    "Booleans are data types that have only two possible values: ```True``` and ```False```, or ```1``` and ```0```. They represent the two truth values of Boolean logic and algebra (named after the English mathematician, philosopher and logician George Boole, who worked on this logic in the 19th century).\n",
+    "\n",
+    "In Python we can assign the values ```True``` and ```False``` to variables just like strings and numbers, and also use and for example print them as usual:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = True\n",
+    "b = False\n",
+    "print(f\"a is {a} and b is {b}.\") "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<h3 style='color:#3981CB'> Boolean Expression </h3>\n",
+    "\n",
+    "What can we do with Boolean values, and where do they actually come from?\n",
+    "\n",
+    "Boolean algebra has three basic operations: ```not```, ```and``` and ```or```(evaluation in this order of precedence). The following Python program demonstrates how they work:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = True\n",
+    "b = False\n",
+    "print(f\"a is {a} and b is {b}.\")\n",
+    "print(f\"not {a} is {not a} and not {b} is {not b}.\")\n",
+    "print(f\"{a} or {b} is {a or b}.\")\n",
+    "print(f\"{a} and {b} is {a and b}.\") "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "That is, the ```not``` operation turns a Boolean value into the other. The result of an ```or``` operation with two Boolean values is ```True``` if at least one of them is ```True```. The result of an ```and``` operation is ```True``` if both input values are ```True```.\n",
+    "\n",
+    "Typically the functional values of Boolean expressions for all possible combinations of values of their functional arguments are surveyed in truth tables. They are especially useful when dealing with more complex Boolean expressions. The truth table below covers the basic operations from above and the Boolean expressions for implication (```not a or b```, sometimes abbreviated as a => b) and exclusive or (```(not a and b) or (a and not b)```, sometimes abbreviated as a xor b):"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "|```a```|```b```|```not a```|```not b```|```a or b```|```a and b```|```not a or b```|```(not a and b) or (a and not b)```|\n",
+    "| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n",
+    "|```True```|```True```|```False```|```False```|```True```|```True```|```True```|```False```|\n",
+    "|```True```|```False```|```False```|```True```|```True```|```False```|```False```|```True```|\n",
+    "|```False```|```True```|```True```|```False```|```True```|```False```|```True```|```True```|\n",
+    "|```False```|```False```|```True```|```True```|```False```|```False```|```True```|```False```|\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "The complex expressions can be put into Python code just as the basic ones:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = True\n",
+    "b = False\n",
+    "print(f\"{a} => {b} is {not a or b}.\")\n",
+    "print(f\"{a} xor {b} is {(a and not b) or (not a and b)}.\") "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Note that unlike strings and numbers, Boolean values cannot be simply read as input from the user. (If a user types in ```True``` or ```False``` at an input prompt, this is initially a string. By convention, Python considers any non-empty string to be ```True```, so a type cast to Boolean would lead to a ```True``` value in both cases.)\n",
+    "\n",
+    "Usually Boolean values originate from comparisons or other tests. In Python the basic comparison operators returning ```True``` or ```False``` are:\n",
+    "\n",
+    "\t<\t (less than)\n",
+    "\t>\t (greater than)\n",
+    "\t<=\t(less than or equal to)\n",
+    "\t>=\t(greater than or equal to)\n",
+    "\t==\t(equal to)\n",
+    "\t!=\t(not equal to)\n",
+    "    \n",
+    "Equality and non-equality can be checked for objects of all data types (also those that we have not yet discussed), while the less/greater than checks only work for data types for which an ordering relation is defined. This is for example the case for numbers (integers and floats) and strings, so they can easily be applied there:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 5.2\n",
+    "b = 3\n",
+    "print(f\"{a} < {b} is {a < b}\")\n",
+    "print(f\"{a} <= {b} is {a <= b}\")\n",
+    "print(f\"{a} > {b} is {a > b}\")\n",
+    "print(f\"{a} >= {b} is {a >= b}\")\n",
+    "print(f\"{a} == {b} is {a == b}\")\n",
+    "print(f\"{a} != {b} is {a != b}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = \"hello\"\n",
+    "b = \"world\"\n",
+    "print(f\"{a} < {b} is {a < b}\")\n",
+    "print(f\"{a} <= {b} is {a <= b}\")\n",
+    "print(f\"{a} > {b} is {a > b}\")\n",
+    "print(f\"{a} >= {b} is {a >= b}\")\n",
+    "print(f\"{a} == {b} is {a == b}\")\n",
+    "print(f\"{a} != {b} is {a != b}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Note that comparisons can be chained arbitrarily, that is, and expression like ```0 < x <= 10``` is perfectly valid, but this is often not easy to read and understand. <mark style=\"background-color: #FFFF00\">In most cases it is thus better style to do only pair-wise comparisons can chain them together with the Boolean and operator (which is equivalent to the chaining)</mark>:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = int(input(\"Enter an integer number: \"))\n",
+    "is_in_range = 0 < x and x <= 10\n",
+    "print(f\"Is {x} in range? {is_in_range}\") "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This example also shows how comparisons that result in Boolean values and Boolean operations can be combined into more complex Boolean expressions. Here another, maybe more meaningful example:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "weekday = input(\"Which day of the week is it? \")\n",
+    "time = input(\"What time is it? (hh:mm) \")\n",
+    "is_lecturetime = (weekday == \"Wednesday\" or weekday == \"Friday\") \\\n",
+    "and time >= \"13:15\" and time <= \"15:00\"\n",
+    "print(f\"Lecture time? {is_lecturetime}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Note that Python performs a \"lazy evaluation\" of Boolean expressions, that is, it will process the expression from left to right, but only until the point where a certain decision can be made if it evaluates to ```True``` or ```False```. For example, when we enter “Tuesday” in the program above, the evaluation will stop after the check for Friday, at it is clear at this point that the and expression cannot become ```True``` any more. If we enter “Wednesday”, it will skip the test for Friday, but it still it needs to confirm both of the times to be sure that it is lecture time (and can stop after one of them fails). Taking into account this lazy evaluation behavior can help to write more efficient evaluations, for example by checking those things first that can already determine the result of the complete expression, or by performing \"expensive\" calls (e.g. to external databases) only when it is really needed for determining the outcome. In the program above it might be somewhat faster to check the times first and then the day, but for human readers it is more logical to check the day first."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
