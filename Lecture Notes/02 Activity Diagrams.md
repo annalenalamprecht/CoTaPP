@@ -97,7 +97,7 @@ The table below summarizes the most important basic elements and control-flow pa
 
 Please use Quarterfall to submit and check your answers. 
 
-### 1. Understanding Activity Diagrams
+### 1. Understanding Activity Diagrams (★★☆☆☆)
 
 1. “Slime” is currently popular among children. The following instructions describe how to make it: 
     
@@ -139,13 +139,13 @@ Please use Quarterfall to submit and check your answers.
     * parallel execution
     
 
-### 2. Describing Activity Diagrams
+### 2. Describing Activity Diagrams (★★★☆☆)
 
 ![](img/understanding_activity_diagrams.png)
 
 For the diagrams A and B above, summarize in your own words the processes that they describe, and list the control-flow patterns that they include.
 
-### 3. Creating Activity Diagrams
+### 3. Creating Activity Diagrams (★★★☆☆)
 
 In this exercise you are asked to create some UML Activity Diagrams yourself. You can draw them using pen and paper, with an office or graphics software, or use a specialized editor like UMLet (http://www.umlet.com, installation required) or the browser-based UMLetino (http://www.umletino.com/umletino.html).
 

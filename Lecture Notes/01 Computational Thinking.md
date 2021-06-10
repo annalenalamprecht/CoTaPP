@@ -79,7 +79,7 @@ To get warmed up further on Computational Thinking, here some puzzles (inspired 
 
 Please use Quarterfall to submit and check your answers.
 
-### 1. Download Times
+### 1. Download Times (★★★☆☆)
 
 When downloading multiple files from the internet at the same time, the downloads share the capacity of the connection between them, each getting the same share. For example, when downloading 10 files at the same time, each of the downloads can use 1/10 of the capacity. Downloading a single file would be ten times as fast. 
 
@@ -87,7 +87,7 @@ Now consider the following situation (illustrated below): A user is downloading 
 
 ![download times puzzle](img/download_times.png)
 
-### 2. Maximal Gain
+### 2. Maximal Gain (★★☆☆☆)
 
 The grid below contains numbers and two special cells S (for start) and G (for goal). The task: Find the path from S to G on which the sum of the numbers on the visited fields is the highest. But: you are only allowed to step upwards and to the right (not down or to the left). 
 
@@ -95,7 +95,7 @@ What is the maximal sum that can be gained this way, and through which path?
 
 ![grid](img/grid.png)
 
-### 3. Number Segments
+### 3. Number Segments (★★★☆☆)
 
 In a house with 10 floors the lift shows the current floor with a 7-segment digital number display. The numbers 0 (for ground floor) to 9 look like this: 
 
@@ -105,7 +105,7 @@ Thus, to display a number, at least 2 and at most 7 of the segments are switched
 
 Recently one of the segments was broken and did not switch on at all. Nevertheless it was possible to recognize all numbers and tell them apart. Which segment could have been the broken one?
 
-### 4. Quarters
+### 4. Quarters (★★★☆☆)
 
 Black-and-white bitmaps can be represented with the binary characters 0 and 1, as illustrated below: A 0 stands for a white pixel, and a 1 for a black pixel. A picture with 4 x 4 pixels can thus be encoded with 16 characters, and a picture with 8 x 8 pixels with 64 characters.
 
@@ -126,7 +126,7 @@ What is the result for the 8 x 8 raster below?
 
 *Extra question*: How many characters would the procedure save when applied on the coffee bitmap from above?
 
-### 5. Filter
+### 5. Filter (★★★☆☆)
 
 A gray-scale bitmap can be saved as a table or grid, with values of 1 to 5 for each pixel. The value 1 stands for black, the value 5 stands for white, and the values 2 to 4 stands for the lighter-getting shades of gray between them.
 
