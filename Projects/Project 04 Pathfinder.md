@@ -16,7 +16,7 @@ This project revisits the Computational Thinking exercise “Maximal Gain” fro
 <img align="left" src="img/grid.png"> 
 <br>
 <em>The table on the left contains numbers and two fields <strong>S</strong> (for start) and <strong>G</strong> (for goal). The task: Find the path from S to G on which the sum of the numbers on the visited fields is the highest. But: you are only allowed to step upwards and to the right (not down or to the left). 
-<br><br>What is the maximal sum that can be gained this way, and through which path?</em><br><br>
+<br><br>What is the maximal sum that can be gained this way, and through which path?</em><br><br><br>
 </p>
 
 Your task for this project is to use Tkinter to build a GUI that represents the grid (take the one above as
