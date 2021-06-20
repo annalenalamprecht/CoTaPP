@@ -83,13 +83,13 @@ Please use Quarterfall to submit and check your answers.
 
 When downloading multiple files from the internet at the same time, the downloads share the capacity of the connection between them, each getting the same share. For example, when downloading 10 files at the same time, each of the downloads can use 1/10 of the capacity. Downloading a single file would be ten times as fast. 
 
-Now consider the following situation (illustrated below): A user is downloading 4 files at the same time. For each file the remaining download time is displayed. This time is calculated based on the capacity of the internet connection (which stays the same all the time). How many minutes will it take until all 4 files have finished downloading?
+Now consider the following situation (illustrated below): A user is currently downloading 4 files simultaneously. For each file the currently remaining download time is displayed. This time is calculated based on the capacity of the internet connection (which stays the same all the time). How many minutes will it take until all 4 files have finished downloading?
 
 ![download times puzzle](img/download_times.png)
 
 ### 2. Maximal Gain (★★☆☆☆)
 
-The grid below contains numbers and two special cells S (for start) and G (for goal). The task: Find the path from S to G on which the sum of the numbers on the visited fields is the highest. But: you are only allowed to step upwards and to the right (not down or to the left). 
+The grid below contains numbers and two special cells S (for start) and G (for goal). The task: Find the path from S to G on which the sum of the numbers on the visited fields is the highest. But: you are only allowed to step upwards and to the right (in any order you like), so not down or to the left. 
 
 What is the maximal sum that can be gained this way, and through which path? 
 
@@ -103,7 +103,7 @@ In a house with 10 floors the lift shows the current floor with a 7-segment digi
 
 Thus, to display a number, at least 2 and at most 7 of the segments are switched on. 
 
-Recently one of the segments was broken and did not switch on at all. Nevertheless it was possible to recognize all numbers and tell them apart. Which segment could have been the broken one?
+Recently one of the segments was broken and did not switch on at all. Nevertheless it was possible to recognize all numbers and tell them apart. Which segment(s) could have been the broken one? 
 
 ### 4. Quarters (★★★☆☆)
 
@@ -124,18 +124,18 @@ What is the result for the 8 x 8 raster below?
 
 ![quarters](img/quarters.png)
 
-*Extra question*: How many characters would the procedure save when applied on the coffee bitmap from above?
+*Extra question*: How many characters would the procedure save in terms of storage when applied on the coffee bitmap from above?
 
 ### 5. Filter (★★★☆☆)
 
 A gray-scale bitmap can be saved as a table or grid, with values of 1 to 5 for each pixel. The value 1 stands for black, the value 5 stands for white, and the values 2 to 4 stands for the lighter-getting shades of gray between them.
 
-A filtering algorithm computes a picture of same size for a given original according to the following procedure (illustrated on an example below):
+In digital image processing, some operations are performed on the bitmap in order to enhance or modify the image. An example of such an operation is a filtering algorithm. A filtering algorithm computes a picture of same size for a given original according to the following procedure (illustrated on an example below):
 
-For each pixel in the original picture, it takes  the value of the pixel and its eight neighboring pixels, sorts them from smallest to largest, and then takes the value in the middle, i.e. the 5th of 9 values, as the new value of the pixel in the filtered picture. 
+For each pixel in the original picture, it takes the value of the pixel and its eight neighboring pixels, sorts them from smallest to largest, and then selects the value in the middle, i.e. the 5th of 9 values, to be the new value of the current pixel in the filtered picture. 
 
 ![filterexample](img/filterexample.png)
 
-When applied to the leftmost picture below, which of options A-D is the result? 
+When applied to the top picture below, which of options A-D is the result? 
 
 ![filterquestion](img/filterquestion.png)
