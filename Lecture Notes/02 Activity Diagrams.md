@@ -143,7 +143,7 @@ Please use Quarterfall to submit and check your answers.
 
 ![](img/understanding_activity_diagrams.png)
 
-For the diagrams A and B above, summarize in your own words the processes that they describe, and list the control-flow patterns that they include.
+For the diagrams A and B above, summarize in your own words the processes that they describe and the steps involved in these processes. Additionally, list the control-flow patterns that they include.
 
 ### 3. Creating Activity Diagrams (★★★☆☆)
 
