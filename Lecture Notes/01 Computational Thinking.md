@@ -1,8 +1,8 @@
 # Module 1: Computational Thinking
 
-February 10, 2021
+9 February, 2022
 
-This is the very first module of the course Computational Thinking and Programming with Python (CoTAPP). Today we will look at what Computational Thinking means and do some exercises to start thinking computationally. Next time we will take it one step further and discuss how to analyze and describe all kinds of processes from a computational perspective. 
+This is the very first module of the course Computational Thinking and Programming with Python (CoTaPP). Today we will look at what Computational Thinking means and do some exercises to start thinking computationally. Next time we will take it one step further and discuss how to analyze and describe all kinds of processes from a computational perspective. 
 
 
 ## Computational Thinking
@@ -66,7 +66,7 @@ The output would be:
 
 ![turtlegraphics](img/turtlegraphics.png)
 
-Now imagine a not-to-complicated picture and write a program for the turtle to draw it. Only use the three commands above. How does it go?
+Now imagine a not-too-complicated picture and write a program for the turtle to draw it. Only use the three commands above. How does it go?
 
 Probably you will miss a lot of commands, for example for drawing curves and circles. Other versions of the turtle graphics language have these and some other useful commands. The point is that the instruction sets of programming languages are always limited, so this is a bold and simple illustration of one of the major challenges in programming: getting a computer to do complicated things with very simple means. You will see that also with a language like Python, which comes with many more commands and loads of libraries with additional comments, this principal challenge remains. While there are standard patterns for some situations, others require the programmer to get creative. We will see examples of both in the next weeks. 
 
@@ -75,7 +75,7 @@ Finally, note that also with a real programming language, it is easy to make mis
 
 ## Exercises
 
-To get warmed up further on Computational Thinking, here some puzzles (inspired by and adapted from the [GI’s Informatik-Biber](bwinf.de/biber)) that require you to use different computational thinking skills. No programming experience needed, just read the instructions carefully and set your brain to work! :) 
+To get warmed up further on Computational Thinking, here some puzzles (inspired by and adapted from the [GI’s Informatik-Biber](https://bwinf.de/biber)) that require you to use different computational thinking skills. No programming experience needed, just read the instructions carefully and set your brain to work! :) 
 
 Please use Quarterfall to submit and check your answers.
 
