@@ -139,3 +139,14 @@ For each pixel in the original picture, it takes the value of the pixel and its 
 When applied to the top picture below, which of options A-D is the result? 
 
 ![filterquestion](img/filterquestion.png)
+
+### 6. Anaconda Setup
+
+We will use the Anaconda Data Science platform in the course. Anaconda is a free and open source distribution of Python and some other programming languages used in scientific applications. It runs on all major operating systems and provides a number of very useful tools for Python programming.
+Here is what you have to do to get started:
+
+1. Go to https://docs.anaconda.com/anaconda/install/ and follow the installation instructions for your operating system. 
+2. Go to https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-nav-lin and follow the instructions how to start Spyder. 
+3. Start coding!
+
+If you have (unresolvable) trouble with the installation of Anaconda on your device, you can use it also via UU’s MyWorkplace (https://myworkplace.uu.nl/). The app that you need to start is called “Spyder Anaconda3”.
