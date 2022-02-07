@@ -64,7 +64,7 @@ It shows two further elements: 1. Normal, non-rounded rectangles can be used to 
 
 ### Example 7 (hierarchical diagrams): Web Shop
 
-When processes get larger and more complex, it is useful to organize Acitvity Diagrams hierarchically. Here is an example of a simple web shop process: 
+When processes get larger and more complex, it is useful to organize Activity Diagrams hierarchically. Here is an example of a simple web shop process: 
 
 ![uml_hierarchy](img/uml_hierarchy.png)
 
