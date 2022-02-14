@@ -1,6 +1,6 @@
 # Module 02: Activity Diagrams
 
-February 12, 2021
+February 11, 2022
 
 Last time we got started with thinking computationally. We saw that two things are important if you want to program: 1) You need to know what you want to do, and 2) you need to tell the executing machine how to do that for you. 
 
