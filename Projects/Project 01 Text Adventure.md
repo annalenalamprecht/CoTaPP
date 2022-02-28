@@ -2,7 +2,14 @@
 
 In this first group project you will design and implement a text adventure game in Python. We will only have discussed all programming concepts that are needed next week, but you can right now start with the first part (design of the game concept as Activity Diagrams). 
 
-Project 1 needs to be submitted through Blackboard by **March 2, 2022, 13:00**. Make sure to include in the submission the Activity Diagrams (as images), all your code (as .py files) and if applicable any other relevant project files, combined into **one .zip file**.
+Project 1 needs to be submitted through Blackboard by **March 2, 2022, 13:00**. Make sure to include in the submission the documentation, activity diagrams (as images), all your code (as .py files), and if applicable any other relevant project files, combined into **one .zip file**.
+
+## Documentation
+Include a .txt or .pdf document with the following information:
+
+1. Group members: write the name of all the members of your group and the tasks done for each one. Please also include members who did not participate in the project and why (for example, they dropped out of the course).
+2. Project status: write all the project requirements and describe for each requirement if it is completed or not. For example, you can use a numerical scale (0 to 100) or a categorical scale (not done, partially completed, completed, expectations exceeded).
+3. Running instructions: include the instructions or steps that are necessary to run the project with Python. This will help us grade your project, so please be very clear and specific.
 
 ## Assignment
 Text adventures are computer games with text-based user interfaces. They are much easier to program than complex 3D action games, but if designed well they can also be quite intriguing. Typically, a text adventure describes its “world” to the player in a narrative text, and asks the player to submit simple text inputs to interact with the world. These can be conversations with characters in the world, questions, quizzes, assignments, etc. Often the player collects points, coins or other tokens during the game, which they need to complete the game or to trade in for other tokens as the game goes. If you would like to read more about the genre of text adventures, the [Wikipedia article on Interactive Fiction](https://en.wikipedia.org/wiki/Interactive_fiction) might be interesting for you.
