@@ -4,9 +4,16 @@ In this group project you will work with Jupyter Notebooks and create a computat
 is, tell a “story” with code and data. The project is designed to let you gain experience with loading,
 cleaning, filtering, analyzing and visualizing data, and other data science practices.
 
-Project 3 needs to be submitted through Blackboard by **March 31, 2021, 13:00**.
-Make sure to include in the submission all your code (as .ipynb and .py files) and any other required
-files (e.g. input files), combined into **one .zip file**.
+Project 3 needs to be submitted through Blackboard by **March 30, 2022, 13:00**.
+Make sure to include in the submission the documentation, all your code (as .py files), and if applicable 
+any other relevant project files, combined into **one .zip file**.
+
+## Documentation
+Include a .txt or .pdf document with the following information:
+
+1. Group members: write the name of all the members of your group and the tasks done for each one. Please also include members who did not participate in the project and why (for example, they dropped out of the course).
+2. Project status: write all the project requirements and describe for each requirement if it is completed or not. For example, you can use a numerical scale (0 to 100) or a categorical scale (not done, partially completed, completed, expectations exceeded).
+3. Running instructions: include the instructions or steps that are necessary to run the project with Python. This will help us grade your project, so please be very clear and specific. Include any library that is used and is not part of the Python Standard Library.
 
 ## Assignment
 Computational narratives combine text, data and code to tell (often interactive) stories about various topics. Some even regard them as “papers of the future”, as they improve on transparency and reproducibility by design, which is important for Open Science. Here are some examples:

@@ -1,25 +1,21 @@
-# Project 2: Extended Mystery Coffee
+# Project 2: Mystery Coffee
 
-In this group project you will develop an extended version of the “Mystery Coffee” (aka “Coffee
-Partner Lottery”) program that we ran as part of the course’s social activities. The project is designed to
-let you practice with data structures, file I/O and (optionally) access to web resources. 
+In this group project you will develop an extended version of “Mystery Coffee” (aka “Coffee Partner Lottery”): a program desiged to randomly assign people to each other for a coffee meeting. The project is designed to let you practice with data structures, file I/O and (optionally) access to web resources. 
 
-Project 2 needs to be submitted through Blackboard by **March 17, 2021, 13:00**.
-Make sure to include in the submission all your code (as .py files) and any other relevant files for
-running the program (input files), combined into **one .zip file**.
+Project 2 needs to be submitted through Blackboard by **March 16, 2022, 13:00**. Make sure to include in the submission the documentation, all your code (as .py files), and if applicable any other relevant project files, combined into **one .zip file**.
+
+## Documentation
+Include a .txt or .pdf document with the following information:
+
+1. Group members: write the name of all the members of your group and the tasks done for each one. Please also include members who did not participate in the project and why (for example, they dropped out of the course).
+2. Project status: write all the project requirements and describe for each requirement if it is completed or not. For example, you can use a numerical scale (0 to 100) or a categorical scale (not done, partially completed, completed, expectations exceeded).
+3. Running instructions: include the instructions or steps that are necessary to run the project with Python. This will help us grade your project, so please be very clear and specific.
 
 ## Assignment
-The idea of the “Mystery Coffee” (aka “Coffee Partner Lottery”) is to randomly assign people to each
-other for a coffee meeting. In the Department of Information and Computing Sciences, a weekly Coffee
-Partner Lottery started in June 2020 to facilitate informal virtual interactions among colleagues while
-working from home due to the Covid-19 pandemic. People can sign up through a simple web form.
-Every Monday morning a Python script is run to generate new random pairings from the currently
-signed up people. They are then informed via e-mail that they have been matched for a coffee meeting.
+The idea of the “Mystery Coffee” (aka “Coffee Partner Lottery”) is to randomly assign people to each other for a coffee meeting. In the Department of Information and Computing Sciences, a weekly Coffee Partner Lottery started in June 2020 to facilitate informal virtual interactions among colleagues while working from home due to the Covid-19 pandemic. People can sign up through a simple web form. Every Monday morning a Python script is run to generate new random pairings from the currently signed up people. They are then informed via e-mail that they have been matched for a coffee meeting.
 You can find the code on GitHub: [https://github.com/annalenalamprecht/Coffee-Partner-Lottery](https://github.com/annalenalamprecht/Coffee-Partner-Lottery).
 
-Your task for this project is to develop a Mystery Coffee program with more features. In particular, it
-should be able to create coffee groups of different sizes (not just pairs), and provide a new
-“conversation starter” in every round (such as a joke, a statement to debate or a question to answer).
+Your task for this project is to develop a Mystery Coffee program with more features. In particular, it should be able to create coffee groups of different sizes (not just pairs), and provide a new “conversation starter” in every round (such as a joke, a statement to debate or a question to answer).
 
 Make sure that your Mystery Coffee program meets the following requirements:
 1. The program reads the list of participants from an online form (you can create one with Google Forms or MS Forms, for example), either directly or via a downloaded (.csv) file of responses. The form asks for name and e-mail address. If you like, you can include additional fields.
@@ -30,16 +26,12 @@ Make sure that your Mystery Coffee program meets the following requirements:
 6. When the matching is finished, the program prints out the generated pairs/groups to the screen in nice, readable formatting.
 7. In every round the program provides a new conversation starter (for example a joke, a statement to debate or a question to answer). The program reads these from a local file. The conversation starter is also printed to the screen.
 8. The program generates messages to all groups which address the participants by name, inform them about having been matched for a meeting, and include the conversation starter. It saves these messages in one or multiple text files.
+9. Create a new name for your version of Mastery Coffee. 
 
-Feel free to be creative and add additional features. For example, you could try to make the program
-avoid redundant matchings (that is, not putting together people who have been matched in a previous
-round), to retrieve the conversation starter from a web resource or service, or to send out the messages
-generated by the program as e-mails. 
+Feel free to be creative and add additional features. For example, you could try to make the program avoid redundant matchings (that is, not putting together people who have been matched in a previous round), to retrieve the conversation starter from a web resource or service, or to send out the messages generated by the program as e-mails. 
 
 ## Tips
-Ask your tutors for help and feedback early and regularly. Don’t wait until you are really stuck
-somewhere. Often it is difficult to fix programming problems that are caused by poor design decisions
-made early in the project.
+Ask your tutors for help and feedback early and regularly. Don’t wait until you are really stuck somewhere. Often it is difficult to fix programming problems that are caused by poor design decisions made early in the project.
 
 Check the project grading rubric. This will give you a clearer idea of what is important to focus on.
 
