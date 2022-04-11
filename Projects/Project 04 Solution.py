@@ -6,10 +6,20 @@ def create_random_numbers():
     bottom_row = ['S'] + [random.randint(0, 9) for _ in range(4)]
     # noinspection PyTypeChecker
     top_row = [random.randint(0, 9) for _ in range(4)] + ['G']
-    return [bottom_row] + [[random.randint(0, 9) for _ in range(5)] for _ in range(4)] + [top_row]
+    my_numbers = [bottom_row] + \
+                 [[random.randint(0, 9) for _ in range(5)] for _ in range(3)] + \
+                 [top_row]
+    my_numbers.reverse()
+    return my_numbers
 
 def get_default_numbers():
-    return [['S', 0, 1, 3, 5], [3, 1, 0, 2, 0], [2, 2, 0, 2, 1], [1, 2, 0, 2, 3], [2, 0, 1, 1, 'G']]
+    my_numbers = [['S', 0, 1, 3, 5],
+                  [3, 1, 0, 2, 0],
+                  [2, 2, 0, 2, 1],
+                  [1, 2, 0, 2, 3],
+                  [2, 0, 1, 1, 'G']]
+    my_numbers.reverse()
+    return my_numbers
 
 
 # noinspection PyUnusedLocal
@@ -26,7 +36,6 @@ def get_canvas(parent, numbers):
 
 def get_frame(parent, numbers):
     my_numbers = numbers.copy()
-    my_numbers.reverse()
     grand_container = tk.Frame(parent)
     grand_container.pack()
     for row in my_numbers:
@@ -74,11 +83,17 @@ class PathfinderApp:
 
     # noinspection PyUnusedLocal
     def createNewRandomFieldClick(self, event):
-        # Todo: this new field should replace the existing one
         self.numbers = create_random_numbers()
+        row_widgets = self.container0.winfo_children()
+        print(self.numbers)
+        assert len(self.numbers) == len(row_widgets), f'Wrong number of rows: {len(self.numbers)}, {len(row_widgets)}'
+        for i, row_widget in enumerate(row_widgets):
+            element_widgets = row_widget.winfo_children()
+            assert len(element_widgets) == len(self.numbers[i]), 'Wrong number of columns'
+            for j, element_widget in enumerate(element_widgets):
+                element_widget.configure(text=str(self.numbers[i][j]))
+                element_widget.pack()
         self.best_path_text.configure(text='')
-        self.container0 = get_frame(self.parent, self.numbers)
-        self.container0.pack()
 
     # noinspection PyUnusedLocal
     def exitProgramClick(self, event):
