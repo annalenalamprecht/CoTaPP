@@ -105,7 +105,7 @@ def get_country_names():
             continue
         if r["population"] < 100000:
             continue
-        names.append(r["name"])
+        names.append(r["name"]["common"])
     return sorted(names)
 
         

@@ -30,6 +30,9 @@ class RunApp:
 
 # function to get list of country names from web service
 def get_country_names():
+    """
+    Return a list of European countries in Western, Central or Northern Europe with at least 100000 inhabitants
+    """
     
     # FILL THIS IN
     
