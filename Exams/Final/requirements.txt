@@ -1,0 +1,25 @@
+bs4
+caesarcipher
+copy
+csv
+datetime
+json
+matplotlib.pyplot
+multiprocess
+multiprocessing
+numpy
+pandas
+pprint
+random
+re
+requests
+shutil
+statistics
+sys
+threading
+time
+timeit
+tkinter
+tkmacosx (for MAC users)
+urllib.parse
+xmltodict
