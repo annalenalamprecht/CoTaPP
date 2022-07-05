@@ -1,6 +1,10 @@
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import time
+
+
 
 def get_number_of_ticket_prices(df):
     return len(df)
@@ -66,7 +70,7 @@ if __name__ == "__main__":
     
     #longest journey duration
     longest = get_longest_journey_duration(df)
-    print(f"The longest journey takes {total_plane} minutes.")
+    print(f"The longest journey takes {longest} minutes.")
     
     #ticket price per weeks ahead
     draw_barchart_of_ticket_price_per_weeks_ahead(df)
