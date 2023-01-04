@@ -1,4 +1,0 @@
-filename	download_time
-SherlockHolmes.txt	10
-LetItBe.txt	1
-JohnOliver.mov	100
